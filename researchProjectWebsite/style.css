@@ -2,3 +2,42 @@
 .nb-bg-color{
     background-color: rgb(65, 4, 56);
 }
+
+img#waltuh{
+    width: 5%;
+    height: auto;
+    transition: transform 1s ease;
+}
+
+img#waltuh:hover{
+    transform: scale(20, 10) translate(50%, 50%);
+    transition: transform 1s ease;
+}
+.hover-underline-animation {
+    display: inline-block;
+    position: relative;
+    /*color: #0087ca;*/
+  }
+  
+.hover-underline-animation:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #eae6e6;
+    /*transform-origin: bottom right;*/
+    transition: transform 0.35s ease-out;
+}
+  
+.hover-underline-animation:hover:after {
+    transform: scaleX(1);
+    /*transform-origin: bottom left;*/
+}
+
+a#nbMenuItem{
+    font-size: 25px;
+    padding: 0 20px;
+}
