@@ -3,13 +3,13 @@
     background-color: rgb(65, 4, 56);
 }
 
-img#waltuh{
+img#saul{
     width: 5%;
-    height: auto;
+    height: 5%;
     transition: transform 1s ease;
 }
 
-img#waltuh:hover{
+img#saul:hover{
     transform: scale(20, 10) translate(50%, 50%);
     transition: transform 1s ease;
 }
