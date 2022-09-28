@@ -13,7 +13,9 @@
 <body>
     <nav class="navbar navbar-expand-lg navbar-dark nb-bg-color">
         <div class="container">
-            <img src="/img/saul-goodman.jpg" id="saul">
+            <a href="#" class="navbar-brand">
+                <img src="./img/saul-goodman.jpg" id="saul" alt="SAUL" class="align-text-top">
+            </a>
 
             <!-- Hamburger Menu Button -->
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
@@ -25,13 +27,13 @@
             <!-- Links to hamburger menu button -->
             <ul class="navbar-nav ms-auto">
                 <li class="nav-item">
-                    <a href="/authors.html" class="nav-link hover-underline-animation" id="nbMenuItem">Author</a>
+                    <a href="./authors.html" class="nav-link hover-underline-animation" id="nbMenuItem">Authors</a>
                 </li>
                 <li class="nav-item">
-                    <a href="/procedures.html" class="nav-link hover-underline-animation" id="nbMenuItem">Procedures</a>
+                    <a href="./procedures.html" class="nav-link hover-underline-animation" id="nbMenuItem">Procedures</a>
                 </li>
                 <li class="nav-item">
-                    <a href="/results.html" class="nav-link hover-underline-animation" id="nbMenuItem">Results</a>
+                    <a href="./results.html" class="nav-link hover-underline-animation" id="nbMenuItem">Results</a>
                 </li>
             </ul>
         </div>
@@ -41,15 +43,98 @@
     </nav>
 
     <!-- Showcase -->
-    <section class="showcase test-light p-2 text-center">
+    <section class="showcase test-light p-2 text-center" style="background-color:#876491">
         <div class="container">
             <div class="row">
                 <div class="col-sm-6 p-0 d-flex align-items-center">
-
+                    <img class="img-fluid" src="./img/lab-setup.png" alt="Lab Setup">
+                </div>
+                <div class="col-sm-6 p-0 d-flex align-items-center">
+                    <div class="container">
+                        <h1 class="display-4">The Effect of Size of Trichoderma Population on the Growth Rate of Chlorophytum Comosum</h1>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
+
+    <div class="stuffs">
+    <!-- Overview -->
+    <section class="overview text-dark p-2 text-left">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-4 p-3">
+                    <img class="img-fluid" src="./img/background-image.png" alt="Overview">
+                </div>
+                <div class="col-sm-8 p-3">
+                    <h1 class="ovPadLeft">Background</h1>
+                    <p class="lead overview-font ovPadLeft">Trichoderma is a genus of fungi that is a member of the family Hypocreaceae. They are
+                        green-spored fungi that develop spores in asci (Schuster &amp; Schmoll, 2010). Chlorophytum
+                        comosum, also known as “spider plant” is a perennial flowering plant that is considered to be a
+                        common houseplant. This study will research the effects of various sizes of Trichoderma
+                        populations on the growth rate of C. comosum plants. Trichoderma has been shown to have
+                        beneficial effects on plants. Trichoderma strains have been shown to have the ability to increase
+                        plant growth rate, plant resistance to various diseases, and plant tolerance to abiotic stresses
+                        (Hermosa et al., 2012).</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Rationale -->
+    <section class="overview text-dark p-2 text-left">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-8 p-3">
+                    <h1 class="ovPadRight">Rationale</h1>
+                    <p class="lead overview-font ovPadRight">Trichoderma is capable of fighting off plant diseases and keeping plants healthy.
+                        Understanding the true effect that Trichoderma has on plant growth can lead to proper utilization
+                        of Trichoderma in populations of plants such as C. comosum, which may benefit those who rely
+                        on plants, such as the people of Kenya who grow C. comosum and use it as a food source
+                        (Masinde et al., 2005). In addition, Trichoderma is already being used in large quantities in
+                        agriculture to help with disease control and crop yield (Harman et al., 2007). The study’s purpose
+                        was to investigate the effects of Trichoderma on C. comosum specimens to assess Trichoderma’s
+                        ability to aid a plant’s growth.</p>
+                </div>
+                <div class="col-sm-4 p-3">
+                    <img class="img-fluid rationale-img" src="./img/rationale-image.jpg" alt="Overview">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Course Description -->
+    <section class="overview text-dark p-2 text-left">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-4 p-3">
+                    <img class="img-fluid" src="./img/research-lab.png" alt="Research Practicum">
+                </div>
+                <div class="col-sm-8 p-3">
+                    <h1 class="ovPadLeft">Research Practicum</h1>
+                    <p class="lead overview-font ovPadLeft">Research Practicum is the final required research course at HTHS.
+                        During this course you are  required to meet with faculty mentors (and outside mentors if you are working
+                        in another facility), conduct your experiments, analyze and interpret your results and draw conclusions
+                        relevant to the rationale for your research. You will then write a comprehensive research paper,
+                        integrating the knowledge gained in both ITR and this course. At the end of this course all students
+                        are required to give a professional quality oral presentation of their work. In addition to research 
+                        and data analysis skills, you will develop skills in communication, time management, organization, 
+                        decision making, resource allocation, scientific ethics, and  lab safety.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+
+    <!-- Footer -->
+    <footer class="p-5 footer text-light text-center position-relative">
+        <div class="container">
+            <p class="lead">Copyright &copy; SE 2022 Research Website</p>
+            <a href="#" class="position-absolute bottom-0 end-0 p-5">
+                <i class="bi bi-arrow-up-circle h2 icon-white"></i>
+            </a>
+        </div>
+    </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" 
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" 
