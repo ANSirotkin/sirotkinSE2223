@@ -8,7 +8,7 @@ a.navbar-brand{
     height:auto;
 }
 
-img#saul{
+#saul{
     width: 100%;
     height: auto;
     transition: transform 1s ease;
@@ -16,7 +16,7 @@ img#saul{
     z-index: 10;
 }
 
-img#saul:hover{
+#saul:hover{
     transform: scale(11, 7) translate(50%, 50%);
     transition: transform 1s ease 2s;
 }
@@ -73,6 +73,10 @@ a#nbMenuItem{
 
 .stuffs{
     background-color: rgb(206, 175, 206);
+}
+
+.stuffs p{
+    font-weight: 600;
 }
 
 .author{
