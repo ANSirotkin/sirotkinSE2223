@@ -3,15 +3,21 @@
     background-color: rgb(65, 4, 56);
 }
 
+a.navbar-brand{
+    width: 8%;
+    height:auto;
+}
+
 img#saul{
-    width: 10%;
+    width: 100%;
     height: auto;
     transition: transform 1s ease;
+    position: relative;
     z-index: 10;
 }
 
 img#saul:hover{
-    transform: scale(14, 9) translate(50%, 50%);
+    transform: scale(11, 7) translate(50%, 50%);
     transition: transform 1s ease 2s;
 }
 .hover-underline-animation {
@@ -58,6 +64,7 @@ a#nbMenuItem{
 .rationale-img{
     width: 100%;
     height: auto;
+    opacity: 1;
 }
 
 .icon-white{
@@ -80,4 +87,28 @@ hr{
 .card-img-top{
     height: 300px;
     width: auto;
+}
+
+.tojesse:hover{
+    background-image: url("./img/jesse.jpg");
+    background-size: 100% 100%;
+}
+
+.disappear{
+    opacity: 1;
+    transition: opacity 1s ease;
+}
+
+.disappear:hover{
+    opacity: 0;
+    transition: opacity 2s ease 5s;
+}
+
+h1 a{
+    text-decoration: none;
+    color: inherit;
+}
+
+h1 a:hover{
+    color: inherit;
 }
