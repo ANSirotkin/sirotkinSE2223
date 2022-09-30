@@ -176,3 +176,9 @@ h1 a:hover{
 .carousel-item{
     border: 3px solid black;
 }
+
+@media (max-width: 480px){
+    .innercar{
+        width: 100%;
+    }
+}
