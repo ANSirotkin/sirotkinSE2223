@@ -109,6 +109,11 @@ hr{
     background-size: 100% 100%;
 }
 
+.towalt:hover{
+    background-image: url("./img/waltuhwhite.jpg");
+    background-size: 100% 100%;
+}
+
 .disappear{
     opacity: 1;
     transition: opacity 1s ease;
@@ -118,7 +123,7 @@ hr{
 
 .disappear:hover{
     opacity: 0;
-    transition: opacity 2s ease 5s;
+    transition: opacity 2s ease 3s;
 }
 
 h1 a{
