@@ -40,7 +40,78 @@
         </div>   
     </nav>
 
-
+    <!-- Procedures -->
+    <section class="procedures">
+        <div class="container">
+            <br>
+            <h1 class="text-center procedure">Procedures</h1>
+            <hr><br> <!-- Horiz line and line break -->
+            
+            <!-- Accordians + Pictures organized in 1 x 3 format -->
+            <div class="row row-cols-1 row-cols-lg-3 g-4">
+                <div class="col">
+                    <img class="procimg" src="./img/setup-exp.png" alt="Setting Up the Experiment">
+                    <div class="accordion-item acchead">
+                        <h2 class="accordion-header" id="headingOne">
+                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                            Setting Up the Experiment
+                          </button>
+                        </h2>
+                        <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                          <div class="accordion-body">
+                            <ol>
+                                <li>Weigh and record mass of <em>C. comosum</em> before experiment</li><br>
+                                <li>Add plant to pot and add soil</li><br>
+                                <li>Measure correct amount of Trichoderma and add to plant (2g, 4g, or 6g)</li><br>
+                                <li>Repeat setup for all 48 plants (4 conditions of 12 trials each)</li><br>
+                                <li>Set up plants in trays in an array of 4 conditions by 12 trials</li>
+                            </ol>
+                          </div>
+                        </div>
+                      </div>
+                </div>
+                <div class="col">
+                    <img class="procimg" src="./img/run-exp.png" alt="Setting Up the Experiment">
+                    <div class="accordion-item acchead">
+                        <h2 class="accordion-header" id="headingTwo">
+                          <button class="accordion-button collapsed acchead" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            Running the Experiment
+                          </button>
+                        </h2>
+                        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                          <div class="accordion-body">
+                            <ol>
+                                <li>Carry out experiment for 6 weeks</li><br>
+                                <li>Water plants with 1/16 quart of water every Monday, Wednesday, and Friday</li><br>
+                                <li>If any components fall out of pots, replace them with new ones and dispose of old ones</li>
+                            </ol>
+                        </div>
+                        </div>
+                      </div>
+                </div>
+                <div class="col">
+                    <img class="procimg" src="./img/data-collect.png" alt="Setting Up the Experiment">
+                    <div class="accordion-item acchead">
+                        <h2 class="accordion-header" id="headingThree">
+                          <button class="accordion-button collapsed acchead" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                            Collection of Data
+                          </button>
+                        </h2>
+                        <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                          <div class="accordion-body">
+                            <ol>
+                                <li>Empty pots and obtain <em>C. comosum</em> specimens</li><br>
+                                <li>Clean <em>C. comosum</em> specimens by rinsing in tap water</li><br>
+                                <li>Dispose of the remaining contents of the pot</li><br>
+                                <li>Weigh and record mass of <em>C. comosum</em> after experiment</li>
+                            </ol>
+                          </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <!-- Footer -->
     <footer class="p-5 footer text-light text-center position-relative">
@@ -51,5 +122,8 @@
             </a>
         </div>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" 
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" 
+        crossorigin="anonymous"></script>
 </body>
 </html>

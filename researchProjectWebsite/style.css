@@ -34,7 +34,7 @@ a.navbar-brand{
     height: 2px;
     bottom: 0;
     left: 0;
-    background-color: #eae6e6;
+    background-color: white;
     /*transform-origin: bottom right;*/
     transition: transform 0.35s ease-out;
 }
@@ -61,10 +61,10 @@ a#nbMenuItem{
     background-color: #1d1021;
 }
 
-.rationale-img{
+.bodimg{
     width: 100%;
     height: auto;
-    opacity: 1;
+    border: 5px solid rgb(30, 2, 30);
 }
 
 .icon-white{
@@ -79,7 +79,7 @@ a#nbMenuItem{
     font-weight: 600;
 }
 
-.author{
+.author, .procedures{
     background-color:rgb(163, 140, 160);
     padding-bottom: 20px;
 }
@@ -89,7 +89,7 @@ hr{
 }
 
 .card-img-top{
-    height: 300px;
+    height: 500px;
     width: auto;
 }
 
@@ -101,6 +101,8 @@ hr{
 .disappear{
     opacity: 1;
     transition: opacity 1s ease;
+    height: 100%;
+    width: auto;
 }
 
 .disappear:hover{
@@ -115,4 +117,27 @@ h1 a{
 
 h1 a:hover{
     color: inherit;
+}
+
+.procimg{
+    width: 100%;
+    height: 350px;
+    border: 3px solid rgb(81, 9, 81);
+}
+
+.acchead{
+    background-color:rgb(206, 175, 206);
+}
+
+.acchead button{
+    font-weight: bold;
+    background-color:rgb(206, 175, 206);
+}
+
+.acchead button:hover{
+    box-shadow: 5px 5px 15px rgb(44, 3, 44);
+}
+
+.acchead ol li{
+    font-weight: 500;
 }
