@@ -8,7 +8,7 @@ new (class {
 	}
 
 	async parseCSV() {
-		const response = await fetch("../data/researchdata.csv");
+		const response = await fetch("data/researchdata.csv");
 		const data = await response.text();
 		const lines = data.split("\n");
 
