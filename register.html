@@ -9,20 +9,26 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
     <link href="style.css" rel="stylesheet">
     <script
-            src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.9.1/chart.min.js"
-            integrity="sha512-ElRFoEQdI5Ht6kZvyzXhYG9NqjtkmlkfYk0wr6wHxU9JEHakS7UJZNeml5ALk+8IKlU6jDgMabC3vkumRokgJA=="
-            crossorigin="anonymous"
-            referrerpolicy="no-referrer"
-            defer
-        ></script>
-    <script src="js/researchLC.js" defer></script>
+			src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+			defer
+			integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+			crossorigin="anonymous"
+		></script>
+		<script
+			src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/crypto-js.min.js"
+			defer
+			integrity="sha512-E8QSvWZ0eCLGk4km3hxSsNmGWbLtSCSUcewDQPQWZF6pEU8GlT8a5fF32wOl1i8ftdMhssTrF/OhyGWwonTcXA=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer"
+		></script>
+		<script type="module" src="js/register.js" defer></script>
     <title>Research Project</title>
 </head>
 <body>
     <nav class="navbar navbar-expand-lg navbar-dark nb-bg-color">
         <div class="container">
-            <a href="index.html" class="navbar-brand">
-                <img src="./img/saul-goodman.jpg" id="saul" alt="SAUL">
+            <a href="#" class="navbar-brand">
+                <img src="./img/saul-goodman.jpg" id="saul" alt="SAUL" class="align-text-top">
             </a>
 
             <!-- Hamburger Menu Button -->
@@ -55,11 +61,56 @@
             </ul>
         </div>
         </div>
+
+        
     </nav>
 
-        <div class="chart pt-5 pb-5 container">
-            <canvas id="lineChart"></canvas>
-        </div>
+    <div class="container">
+        <br />
+        <h2 class="text-center">Account Registration</h2>
+        <br />
+    </div>
+
+    <!--Sign Up -->
+    <div class="signUpForm mb-5">
+        <form>
+            <input
+                type="text"
+                placeholder="First Name"
+                id="firstName"
+                class="form-control mb-3"
+            />
+            <input
+                type="text"
+                placeholder="Last Name"
+                id="lastName"
+                class="form-control mb-3"
+            />
+            <input
+                type="email"
+                placeholder="Email"
+                id="userEmail"
+                class="form-control mb-3"
+            />
+            <input
+                type="password"
+                placeholder="password"
+                id="userPass"
+                class="form-control mb-3"
+            />
+            <button
+                type="button"
+                id="submitData"
+                name="submitData"
+                class="btn btn-outline-primary mb-3 w-100"
+            >
+                Register
+            </button>
+            <a href="signIn.html" class="badge bg-secondary py-1 w-100"
+                >Already have an account?</a
+            >
+        </form>
+    </div>
 
     <!-- Footer -->
     <footer class="p-5 footer text-light text-center position-relative">
