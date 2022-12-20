@@ -92,6 +92,6 @@ function logIn(user) {
 		localStorage.setItem("keepLoggedIn", "yes");
 		localStorage.setItem("user", JSON.stringify(user));
 		alert("Great success!");
-		window.location = "index.html";
+		window.location = "home.html";
 	}
 }

@@ -1,201 +1,414 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" 
-        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
-    <link href="style.css" rel="stylesheet">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css"
+    />
+    <link href="style.css" rel="stylesheet" />
+    <script type="module" src="js/stuff.js" defer></script>
     <title>Research Project</title>
-</head>
-<body>
+  </head>
+  <body>
     <nav class="navbar navbar-expand-lg navbar-dark nb-bg-color">
-        <div class="container">
-            <a href="./index.html" class="navbar-brand">
-                <img src="./img/saul-goodman.jpg" id="saul" alt="SAUL" class="align-text-top">
-            </a>
+      <div class="container">
+        <a href="./index.html" class="navbar-brand">
+          <img
+            src="./img/saul-goodman.jpg"
+            id="saul"
+            alt="SAUL"
+            class="align-text-top"
+          />
+        </a>
 
-            <!-- Hamburger Menu Button -->
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
-                <span class="navbar-toggler-icon"></span>
-            </button>
+        <!-- Hamburger Menu Button -->
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navmenu"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
 
-            <!-- Collapsible navbar menu with custom hover underline CSS animation -->
-            <div class="collapse navbar-collapse" id="navmenu">
-            <!-- Links to hamburger menu button -->
-            <ul class="navbar-nav ms-auto">
-                <li class="nav-item">
-                    <a href="./authors.html" class="nav-link hover-underline-animation" id="nbMenuItem">Authors</a>
-                </li>
-                <li class="nav-item">
-                    <a href="./procedures.html" class="nav-link hover-underline-animation" id="nbMenuItem">Procedures</a>
-                </li>
-                <li class="nav-item">
-                    <a href="./results.html" class="nav-link hover-underline-animation" id="nbMenuItem">Results</a>
-                </li>
-                <li class="nav-item">
-                  <a href="./home.html" class="nav-link hover-underline-animation" id="nbMenuItem">Home</a>
-                  </li>
-                  <li class="nav-item nbMenuItem">
-                    <a  id="userLink" class="nav-link" href="">User Name</a>
-                </li>
-                <li class="nav-item nbMenuItem">
-                    <a  id="signOut" class="nav-link hover-underline-animation" href="">Sign Out</a>
-                </li>
-            </ul>
+        <!-- Collapsible navbar menu with custom hover underline CSS animation -->
+        <div class="collapse navbar-collapse" id="navmenu">
+          <!-- Links to hamburger menu button -->
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a
+                href="./authors.html"
+                class="nav-link hover-underline-animation"
+                id="nbMenuItem"
+                >Authors</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                href="./procedures.html"
+                class="nav-link hover-underline-animation"
+                id="nbMenuItem"
+                >Procedures</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                href="./results.html"
+                class="nav-link hover-underline-animation"
+                id="nbMenuItem"
+                >Results</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                href="./home.html"
+                class="nav-link hover-underline-animation"
+                id="nbMenuItem"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                id="userLink"
+                class="nav-link hover-underline-animation"
+                href="register.html"
+                >Register</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                id="signOut"
+                class="nav-link hover-underline-animation"
+                href="signIn.html"
+                >Sign In</a
+              >
+            </li>
+          </ul>
         </div>
-        </div>   
+      </div>
     </nav>
 
     <!-- Procedures -->
     <section class="procedures">
-        <div class="container">
-            <br>
-            <h1 class="text-center procedure">Procedures</h1>
-            <hr><br> <!-- Horiz line and line break -->
-            
-            <!-- Accordians + Pictures organized in 1 x 3 format -->
-            <div class="row row-cols-1 row-cols-lg-3 g-4">
-                <div class="col">
-                    <img class="procimg" src="./img/setup-exp.png" alt="Setting Up the Experiment">
-                    <div class="accordion-item acchead">
-                        <h2 class="accordion-header" id="headingOne">
-                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
-                            Setting Up the Experiment
-                          </button>
-                        </h2>
-                        <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
-                          <div class="accordion-body">
-                            <ol>
-                                <li>Weigh and record mass of <em>C. comosum</em> before experiment</li><br>
-                                <li>Add plant to pot and add soil</li><br>
-                                <li>Measure correct amount of Trichoderma and add to plant (2g, 4g, or 6g)</li><br>
-                                <li>Repeat setup for all 48 plants (4 conditions of 12 trials each)</li><br>
-                                <li>Set up plants in trays in an array of 4 conditions by 12 trials</li>
-                            </ol>
-                          </div>
-                        </div>
-                      </div>
+      <div class="container">
+        <br />
+        <h1 class="text-center procedure">Procedures</h1>
+        <hr />
+        <br />
+        <!-- Horiz line and line break -->
+
+        <!-- Accordians + Pictures organized in 1 x 3 format -->
+        <div class="row row-cols-1 row-cols-lg-3 g-4">
+          <div class="col">
+            <img
+              class="procimg"
+              src="./img/setup-exp.png"
+              alt="Setting Up the Experiment"
+            />
+            <div class="accordion-item acchead">
+              <h2 class="accordion-header" id="headingOne">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseOne"
+                  aria-expanded="false"
+                  aria-controls="collapseOne"
+                >
+                  Setting Up the Experiment
+                </button>
+              </h2>
+              <div
+                id="collapseOne"
+                class="accordion-collapse collapse"
+                aria-labelledby="headingOne"
+                data-bs-parent="#accordionExample"
+              >
+                <div class="accordion-body">
+                  <ol>
+                    <li>
+                      Weigh and record mass of <em>C. comosum</em> before
+                      experiment
+                    </li>
+                    <br />
+                    <li>Add plant to pot and add soil</li>
+                    <br />
+                    <li>
+                      Measure correct amount of Trichoderma and add to plant
+                      (2g, 4g, or 6g)
+                    </li>
+                    <br />
+                    <li>
+                      Repeat setup for all 48 plants (4 conditions of 12 trials
+                      each)
+                    </li>
+                    <br />
+                    <li>
+                      Set up plants in trays in an array of 4 conditions by 12
+                      trials
+                    </li>
+                  </ol>
                 </div>
-                <div class="col">
-                    <img class="procimg" src="./img/run-exp.png" alt="Setting Up the Experiment">
-                    <div class="accordion-item acchead">
-                        <h2 class="accordion-header" id="headingTwo">
-                          <button class="accordion-button collapsed acchead" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                            Running the Experiment
-                          </button>
-                        </h2>
-                        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
-                          <div class="accordion-body">
-                            <ol>
-                                <li>Carry out experiment for 6 weeks</li><br>
-                                <li>Water plants with 1/16 quart of water every Monday, Wednesday, and Friday</li><br>
-                                <li>If any components fall out of pots, replace them with new ones and dispose of old ones</li>
-                            </ol>
-                        </div>
-                        </div>
-                      </div>
-                </div>
-                <div class="col">
-                  <div class="towalt">
-                    <img class="procimg disappear" src="./img/data-collect.png" alt="Setting Up the Experiment">
-                  </div>
-                    <div class="accordion-item acchead">
-                        <h2 class="accordion-header" id="headingThree">
-                          <button class="accordion-button collapsed acchead" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                            Collection of Data
-                          </button>
-                        </h2>
-                        <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
-                          <div class="accordion-body">
-                            <ol>
-                                <li>Empty pots and obtain <em>C. comosum</em> specimens</li><br>
-                                <li>Clean <em>C. comosum</em> specimens by rinsing in tap water</li><br>
-                                <li>Dispose of the remaining contents of the pot</li><br>
-                                <li>Weigh and record mass of <em>C. comosum</em> after experiment</li>
-                            </ol>
-                          </div>
-                        </div>
-                    </div>
-                </div>
+              </div>
             </div>
-            <div class="row col-12 procunimg">
-                <div class="covprocunimg d-flex align-items-center">
-                    <div id="carouselExampleIndicators" class="carousel slide innercar" data-bs-ride="true">
-                        <div class="carousel-inner">
-                          <div class="carousel-item active">
-                            <img src="./img/Research Oral Defense Slides.jpg" class="d-block w-100" alt="...">
-                          </div>
-                          <div class="carousel-item">
-                            <img src="./img/Research Oral Defense Slides (1).jpg" class="d-block w-100" alt="...">
-                          </div>
-                          <div class="carousel-item">
-                            <img src="./img/Research Oral Defense Slides (2).jpg" class="d-block w-100" alt="...">
-                          </div>
-                          <div class="carousel-item">
-                            <img src="./img/Research Oral Defense Slides (3).jpg" class="d-block w-100" alt="...">
-                          </div>
-                          <div class="carousel-item">
-                            <img src="./img/Research Oral Defense Slides (4).jpg" class="d-block w-100" alt="...">
-                          </div>
-                          <div class="carousel-item">
-                            <img src="./img/Research Oral Defense Slides (5).jpg" class="d-block w-100" alt="...">
-                          </div>
-                          <div class="carousel-item">
-                            <img src="./img/Research Oral Defense Slides (6).jpg" class="d-block w-100" alt="...">
-                          </div>
-                          <div class="carousel-item">
-                            <img src="./img/Research Oral Defense Slides (7).jpg" class="d-block w-100" alt="...">
-                          </div>
-                          <div class="carousel-item">
-                            <img src="./img/Research Oral Defense Slides (8).jpg" class="d-block w-100" alt="...">
-                          </div>
-                          <div class="carousel-item">
-                            <img src="./img/Research Oral Defense Slides (9).jpg" class="d-block w-100" alt="...">
-                          </div>
-                          <div class="carousel-item">
-                            <img src="./img/Research Oral Defense Slides (10).jpg" class="d-block w-100" alt="...">
-                          </div>
-                          <div class="carousel-item">
-                            <img src="./img/Research Oral Defense Slides (11).jpg" class="d-block w-100" alt="...">
-                          </div>
-                          <div class="carousel-item">
-                            <img src="./img/Research Oral Defense Slides (12).jpg" class="d-block w-100" alt="...">
-                          </div>
-                          <div class="carousel-item">
-                            <img src="./img/Research Oral Defense Slides (13).jpg" class="d-block w-100" alt="...">
-                          </div>
-                          <div class="carousel-item">
-                            <img src="./img/Research Oral Defense Slides (14).jpg" class="d-block w-100" alt="...">
-                          </div>
-                        </div>
-                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                          <span class="visually-hidden">Previous</span>
-                        </button>
-                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                          <span class="visually-hidden">Next</span>
-                        </button>
-                      </div>
+          </div>
+          <div class="col">
+            <img
+              class="procimg"
+              src="./img/run-exp.png"
+              alt="Setting Up the Experiment"
+            />
+            <div class="accordion-item acchead">
+              <h2 class="accordion-header" id="headingTwo">
+                <button
+                  class="accordion-button collapsed acchead"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseTwo"
+                  aria-expanded="false"
+                  aria-controls="collapseTwo"
+                >
+                  Running the Experiment
+                </button>
+              </h2>
+              <div
+                id="collapseTwo"
+                class="accordion-collapse collapse"
+                aria-labelledby="headingTwo"
+                data-bs-parent="#accordionExample"
+              >
+                <div class="accordion-body">
+                  <ol>
+                    <li>Carry out experiment for 6 weeks</li>
+                    <br />
+                    <li>
+                      Water plants with 1/16 quart of water every Monday,
+                      Wednesday, and Friday
+                    </li>
+                    <br />
+                    <li>
+                      If any components fall out of pots, replace them with new
+                      ones and dispose of old ones
+                    </li>
+                  </ol>
                 </div>
+              </div>
             </div>
+          </div>
+          <div class="col">
+            <div class="towalt">
+              <img
+                class="procimg disappear"
+                src="./img/data-collect.png"
+                alt="Setting Up the Experiment"
+              />
+            </div>
+            <div class="accordion-item acchead">
+              <h2 class="accordion-header" id="headingThree">
+                <button
+                  class="accordion-button collapsed acchead"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseThree"
+                  aria-expanded="false"
+                  aria-controls="collapseThree"
+                >
+                  Collection of Data
+                </button>
+              </h2>
+              <div
+                id="collapseThree"
+                class="accordion-collapse collapse"
+                aria-labelledby="headingThree"
+                data-bs-parent="#accordionExample"
+              >
+                <div class="accordion-body">
+                  <ol>
+                    <li>Empty pots and obtain <em>C. comosum</em> specimens</li>
+                    <br />
+                    <li>
+                      Clean <em>C. comosum</em> specimens by rinsing in tap
+                      water
+                    </li>
+                    <br />
+                    <li>Dispose of the remaining contents of the pot</li>
+                    <br />
+                    <li>
+                      Weigh and record mass of <em>C. comosum</em> after
+                      experiment
+                    </li>
+                  </ol>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
+        <div class="row col-12 procunimg">
+          <div class="covprocunimg d-flex align-items-center">
+            <div
+              id="carouselExampleIndicators"
+              class="carousel slide innercar"
+              data-bs-ride="true"
+            >
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img
+                    src="./img/Research Oral Defense Slides.jpg"
+                    class="d-block w-100"
+                    alt="..."
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="./img/Research Oral Defense Slides (1).jpg"
+                    class="d-block w-100"
+                    alt="..."
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="./img/Research Oral Defense Slides (2).jpg"
+                    class="d-block w-100"
+                    alt="..."
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="./img/Research Oral Defense Slides (3).jpg"
+                    class="d-block w-100"
+                    alt="..."
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="./img/Research Oral Defense Slides (4).jpg"
+                    class="d-block w-100"
+                    alt="..."
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="./img/Research Oral Defense Slides (5).jpg"
+                    class="d-block w-100"
+                    alt="..."
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="./img/Research Oral Defense Slides (6).jpg"
+                    class="d-block w-100"
+                    alt="..."
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="./img/Research Oral Defense Slides (7).jpg"
+                    class="d-block w-100"
+                    alt="..."
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="./img/Research Oral Defense Slides (8).jpg"
+                    class="d-block w-100"
+                    alt="..."
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="./img/Research Oral Defense Slides (9).jpg"
+                    class="d-block w-100"
+                    alt="..."
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="./img/Research Oral Defense Slides (10).jpg"
+                    class="d-block w-100"
+                    alt="..."
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="./img/Research Oral Defense Slides (11).jpg"
+                    class="d-block w-100"
+                    alt="..."
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="./img/Research Oral Defense Slides (12).jpg"
+                    class="d-block w-100"
+                    alt="..."
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="./img/Research Oral Defense Slides (13).jpg"
+                    class="d-block w-100"
+                    alt="..."
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="./img/Research Oral Defense Slides (14).jpg"
+                    class="d-block w-100"
+                    alt="..."
+                  />
+                </div>
+              </div>
+              <button
+                class="carousel-control-prev"
+                type="button"
+                data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="prev"
+              >
+                <span
+                  class="carousel-control-prev-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button
+                class="carousel-control-next"
+                type="button"
+                data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="next"
+              >
+                <span
+                  class="carousel-control-next-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
 
     <!-- Footer -->
     <footer class="p-5 footer text-light text-center position-relative">
-        <div class="container">
-            <p class="lead">Copyright &copy; SE 2022 Research Website</p>
-            <a href="#" class="position-absolute bottom-0 end-0 p-5">
-                <i class="bi bi-arrow-up-circle h2 icon-white"></i>
-            </a>
-        </div>
+      <div class="container">
+        <p class="lead">Copyright &copy; SE 2022 Research Website</p>
+        <a href="#" class="position-absolute bottom-0 end-0 p-5">
+          <i class="bi bi-arrow-up-circle h2 icon-white"></i>
+        </a>
+      </div>
     </footer>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" 
-        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" 
-        crossorigin="anonymous"></script>
-</body>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>

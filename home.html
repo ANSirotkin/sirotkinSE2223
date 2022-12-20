@@ -14,7 +14,7 @@
 <body>
     <nav class="navbar navbar-expand-lg navbar-dark nb-bg-color">
         <div class="container">
-            <a href="#" class="navbar-brand">
+            <a href="index.html" class="navbar-brand">
                 <img src="./img/saul-goodman.jpg" id="saul" alt="SAUL" class="align-text-top">
             </a>
 
@@ -39,12 +39,12 @@
                 <li class="nav-item">
                     <a href="./home.html" class="nav-link hover-underline-animation" id="nbMenuItem">Home</a>
                     </li>
-                <li class="nav-item nbMenuItem">
-                    <a  id="userLink" class="nav-link" href="">User Name</a>
-                </li>
-                <li class="nav-item nbMenuItem">
-                    <a  id="signOut" class="nav-link hover-underline-animation" href="">Sign Out</a>
-                </li>
+                    <li class="nav-item">
+                        <a  id="userLink" class="nav-link hover-underline-animation" href="register.html">Register</a>
+                    </li>
+                    <li class="nav-item">
+                        <a  id="signOut" class="nav-link hover-underline-animation" href="signIn.html">Sign In</a>
+                    </li>
             </ul>
         </div>
         </div>
@@ -60,37 +60,21 @@
     <!--Firebase Data Operations -->
     <!--Set and Update Data-->
     <div class="container border">
-        <br><h2>Set & Update Data</h2><br>
+        <br><h2>Update Data</h2><br>
         <ol class="list-group list-group-numbered notes">
-            <li class="list-group-item border-0"><strong>Set</strong> - will completely overwrite all of the data stored at the node.</li>
-            <li class="list-group-item border-0"><strong>Update</strong> - will only replace the fields that have changed at the node, or add new fields if they aren't present</li>
-            <li class="list-group-item border-0">If you're collecting data from a sensor, you probably want to use update.</li>
+            <li class="list-group-item border-0"><strong>Update</strong> - will replace the fields that have changed at the node, or add new fields if they aren't present</li>
         </ol><br>
 
         <div class="container dataForm mb-5">
             <form>
-                <select class="form-select mb-3" aria-label="Default select example" id="year">
-                    <option selected>Trial (Year)</option>
-                    <option value="2021">2021</option>
-                    <option value="2022">2022</option>
+                <select class="form-select mb-3" aria-label="Default select example" id="condition">
+                    <option selected>Condition</option>
+                    <option value="2g">2g</option>
+                    <option value="4g">4g</option>
+                    <option value="6g">6g</option>
                 </select>
-                <select class="form-select mb-3" aria-label="Default select example" id="month">
-                    <option selected>Month</option>
-                    <option value="Jan">Jan</option>
-                    <option value="Feb">Feb</option>
-                    <option value="Mar">Mar</option>
-                    <option value="Apr">Apr</option>
-                    <option value="May">May</option>
-                    <option value="Jun">Jun</option>
-                    <option value="Jul">Jul</option>
-                    <option value="Aug">Aug</option>
-                    <option value="Sep">Sep</option>
-                    <option value="Oct">Oct</option>
-                    <option value="Nov">Nov</option>
-                    <option value="Dec">Dec</option>
-                </select>
-                <select class="form-select mb-3" aria-label="Default select example" id="day">
-                    <option selected>Day</option>
+                <select class="form-select mb-3" aria-label="Default select example" id="trial">
+                    <option selected>Trial</option>
                     <option value="1">1</option>
                     <option value="2">2</option>
                     <option value="3">3</option>
@@ -103,29 +87,8 @@
                     <option value="10">10</option>
                     <option value="11">11</option>
                     <option value="12">12</option>
-                    <option value="13">13</option>
-                    <option value="14">14</option>
-                    <option value="15">15</option>
-                    <option value="16">16</option>
-                    <option value="17">17</option>
-                    <option value="18">18</option>
-                    <option value="19">19</option>
-                    <option value="20">20</option>
-                    <option value="21">21</option>
-                    <option value="22">22</option>
-                    <option value="23">23</option>
-                    <option value="24">24</option>
-                    <option value="25">25</option>
-                    <option value="26">26</option>
-                    <option value="27">27</option>
-                    <option value="28">28</option>
-                    <option value="29">29</option>
-                    <option value="30">30</option>
-                    <option value="31">31</option>
-
                 </select>
-                <input type="text" class="form-control mb-3" placeholder="Temperature (°F)" id="temperature">
-                <button type = "button" id="set" name="set" class="btn btn-outline-primary mb-3 w-100">Set</button>
+                <input type="text" class="form-control mb-3" placeholder="Mass (g)" id="mass">
                 <button type = "button" id="update" name="update" class="btn btn-outline-secondary mb-3 w-100">Update</button>
             </form>
         </div>
@@ -140,28 +103,14 @@
 
         <div class="container dataForm mb-5">
             <form>
-                <select class="form-select mb-3" aria-label="Default select example" id="getYear">
-                    <option selected>Trial (Year)</option>
-                    <option value="2021">2021</option>
-                    <option value="2022">2022</option>
+                <select class="form-select mb-3" aria-label="Default select example" id="getCondition">
+                    <option selected>Condition</option>
+                    <option value="2g">2g</option>
+                    <option value="4g">4g</option>
+                    <option value="6g">6g</option>
                 </select>
-                <select class="form-select mb-3" aria-label="Default select example" id="getMonth">
-                    <option selected>Month</option>
-                    <option value="Jan">Jan</option>
-                    <option value="Feb">Feb</option>
-                    <option value="Mar">Mar</option>
-                    <option value="Apr">Apr</option>
-                    <option value="May">May</option>
-                    <option value="Jun">Jun</option>
-                    <option value="Jul">Jul</option>
-                    <option value="Aug">Aug</option>
-                    <option value="Sep">Sep</option>
-                    <option value="Oct">Oct</option>
-                    <option value="Nov">Nov</option>
-                    <option value="Dec">Dec</option>
-                </select>
-                <select class="form-select mb-3" aria-label="Default select example" id="getDay">
-                    <option selected>Day</option>
+                <select class="form-select mb-3" aria-label="Default select example" id="getTrial">
+                    <option selected>Trial</option>
                     <option value="1">1</option>
                     <option value="2">2</option>
                     <option value="3">3</option>
@@ -174,25 +123,6 @@
                     <option value="10">10</option>
                     <option value="11">11</option>
                     <option value="12">12</option>
-                    <option value="13">13</option>
-                    <option value="14">14</option>
-                    <option value="15">15</option>
-                    <option value="16">16</option>
-                    <option value="17">17</option>
-                    <option value="18">18</option>
-                    <option value="19">19</option>
-                    <option value="20">20</option>
-                    <option value="21">21</option>
-                    <option value="22">22</option>
-                    <option value="23">23</option>
-                    <option value="24">24</option>
-                    <option value="25">25</option>
-                    <option value="26">26</option>
-                    <option value="27">27</option>
-                    <option value="28">28</option>
-                    <option value="29">29</option>
-                    <option value="30">30</option>
-                    <option value="31">31</option>
                 </select>
                 <button type = "button" id="get" name="get" class="btn btn-outline-primary mb-3 w-100">get</button>
             </form>
@@ -202,18 +132,16 @@
         <table class="table">
             <thead>
               <tr>
-                <th scope="col">Year</th>
-                <th scope="col">Month</th>
-                <th scope="col">Day</th>
-                <th scope="col">Temperature (°F)</th>
+                <th scope="col">Condition</th>
+                <th scope="col">Trial</th>
+                <th scope="col">Mass</th>
               </tr>
             </thead>
             <tbody>
               <tr>
-                <td><p id ="yearVal"></p></td>
-                <td><p id ="monthVal"></td>
-                <td><p id ="dayVal"></td>
-                <td><p id ="tempVal"></p></td>
+                <td><p id ="conditionVal"></p></td>
+                <td><p id ="trialVal"></td>
+                <td><p id ="massVal"></td>
               </tr>
               <tr>
             </tbody>
@@ -224,38 +152,23 @@
     <div class="container border">
         <br><h2>Get a Data Set</h2><br>
         <ol class="list-group list-group-numbered notes">
-            <li class="list-group-item border-0">Retrieve an entire month's set of data and display in a table</li>
+            <li class="list-group-item border-0">Retrieve an entire condition's set of data and display in a table</li>
         </ol><br>
 
         <div class="container dataForm mb-5">
             <form>
-                <select class="form-select mb-3" aria-label="Default select example" id="getSetYear">
-                    <option selected>Trial (Year)</option>
-                    <option value="2021">2021</option>
-                    <option value="2022">2022</option>
-                </select>
-                <select class="form-select mb-3" aria-label="Default select example" id="getSetMonth">
-                    <option selected>Month</option>
-                    <option value="Jan">Jan</option>
-                    <option value="Feb">Feb</option>
-                    <option value="Mar">Mar</option>
-                    <option value="Apr">Apr</option>
-                    <option value="May">May</option>
-                    <option value="Jun">Jun</option>
-                    <option value="Jul">Jul</option>
-                    <option value="Aug">Aug</option>
-                    <option value="Sep">Sep</option>
-                    <option value="Oct">Oct</option>
-                    <option value="Nov">Nov</option>
-                    <option value="Dec">Dec</option>
+                <select class="form-select mb-3" aria-label="Default select example" id="getConditionSet">
+                    <option selected>Condition</option>
+                    <option value="2g">2g</option>
+                    <option value="4g">4g</option>
+                    <option value="6g">6g</option>
                 </select>
                 <button type = "button" id="getDataSet" name="getDataSet" class="btn btn-outline-primary mb-3 w-100">Get Dataset</button>
             </form>
         </div>
 
         <div>
-            <h5 id="setYearVal"></h5>
-            <h5 id="setMonthVal"></h5>
+            <h5 id="setConditionVal"></h5>
         </div>
 
         <!-- Table for displaying data set -->
@@ -263,8 +176,8 @@
             <table class="table">
                 <thead>
                 <tr>
-                    <th scope="col">Day</th>
-                    <th scope="col">Temperature (°F)</th>
+                    <th scope="col">Trial</th>
+                    <th scope="col">Mass (g)</th>
                 </tr>
                 </thead>
                 <tbody id = "tbody-2">
@@ -279,34 +192,19 @@
     <div class="container border">
         <br><h2>Delete Data</h2><br>
         <ol class="list-group list-group-numbered notes">
-            <li class="list-group-item border-0">This function will allow you to delete a single day's data</li>
-            <li class="list-group-item border-0">To delete an entire month's data, you need to remove modify the directory path removing the 'day' part.</li>
+            <li class="list-group-item border-0">This function will allow you to delete a single trial's data</li>
         </ol><br>
 
         <div class="container dataForm mb-5">
             <form>
-                <select class="form-select mb-3" aria-label="Default select example" id="delYear">
-                    <option selected>Trial (Year)</option>
-                    <option value="2021">2021</option>
-                    <option value="2022">2022</option>
+                <select class="form-select mb-3" aria-label="Default select example" id="delCondition">
+                    <option selected>Condition</option>
+                    <option value="2g">2g</option>
+                    <option value="4g">4g</option>
+                    <option value="6g">6g</option>
                 </select>
-                <select class="form-select mb-3" aria-label="Default select example" id="delMonth">
-                    <option selected>Month</option>
-                    <option value="Jan">Jan</option>
-                    <option value="Feb">Feb</option>
-                    <option value="Mar">Mar</option>
-                    <option value="Apr">Apr</option>
-                    <option value="May">May</option>
-                    <option value="Jun">Jun</option>
-                    <option value="Jul">Jul</option>
-                    <option value="Aug">Aug</option>
-                    <option value="Sep">Sep</option>
-                    <option value="Oct">Oct</option>
-                    <option value="Nov">Nov</option>
-                    <option value="Dec">Dec</option>
-                </select>
-                <select class="form-select mb-3" aria-label="Default select example" id="delDay">
-                    <option selected>Day</option>
+                <select class="form-select mb-3" aria-label="Default select example" id="delTrial">
+                    <option selected>Trial</option>
                     <option value="1">1</option>
                     <option value="2">2</option>
                     <option value="3">3</option>
@@ -319,25 +217,6 @@
                     <option value="10">10</option>
                     <option value="11">11</option>
                     <option value="12">12</option>
-                    <option value="13">13</option>
-                    <option value="14">14</option>
-                    <option value="15">15</option>
-                    <option value="16">16</option>
-                    <option value="17">17</option>
-                    <option value="18">18</option>
-                    <option value="19">19</option>
-                    <option value="20">20</option>
-                    <option value="21">21</option>
-                    <option value="22">22</option>
-                    <option value="23">23</option>
-                    <option value="24">24</option>
-                    <option value="25">25</option>
-                    <option value="26">26</option>
-                    <option value="27">27</option>
-                    <option value="28">28</option>
-                    <option value="29">29</option>
-                    <option value="30">30</option>
-                    <option value="31">31</option>
                 </select>
                 <button type = "button" id="delete" name="delete" class="btn btn-outline-primary mb-3 w-100">Delete</button>
             </form>
